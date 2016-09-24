@@ -7,7 +7,7 @@ Plugin.create(:macnotify) do
     else
       '' unless test.is_a? String
     end
-    
+
     u = "mikumiku"
     u = "@#{user[:idname]} (#{user[:name]})" if user
 
