@@ -17,7 +17,7 @@ Plugin.create(:macnotify) do
     if text.valid_encoding? && u.valid_encoding?
       TerminalNotifier.notify(
           text,
-          :title=>u, :sender=>'org.macosforge.xquartz.X11',
+          :title=>u,
           :appIcon => Skin.get("icon.png"),
           :contentImage => user[:profile_image_url]
       )
